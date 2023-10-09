@@ -1,0 +1,2 @@
+docker run --rm -d -p 5432:5432 -e POSTGRES_USER=efelix14 -e POSTGRES_PASSWORD=efelix14 --name db_post postgres:15
+docker exec db_post psql -U efelix14 -c "CREATE DATABASE EFVBATCH"
